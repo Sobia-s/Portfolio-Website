@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./footer.css";
 import img from "../../Assets/logo.webp";
-import { FaGithub, FaLinkedin, FaGlobe, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaShoppingBag, FaNewspaper, FaEnvelope } from "react-icons/fa";
 
 export function Footer() {
   const scrollToTop = () => {
@@ -18,7 +18,6 @@ export function Footer() {
             className="footer-image hover-animate"
           />
         </Link>
-        <h1 className="footer-heading">Let's Connect</h1>
         <div className="footer-icons">
           <a
             className="hover-animate"
@@ -38,11 +37,11 @@ export function Footer() {
           </a>
           <a
             className="hover-animate"
-            href="https://g.dev/sobiasoomro"
+            href="https://sobia.gumroad.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGlobe />
+            <FaShoppingBag /> 
           </a>
           <a
             className="hover-animate"
@@ -51,6 +50,14 @@ export function Footer() {
             rel="noopener noreferrer"
           >
             <FaEnvelope />
+          </a>
+          <a
+            className="hover-animate"
+            href="https://www.linkedin.com/pulse/lighting-way-developers-inside-lumina-new-kind-portfolio-wilcox-zwige/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaNewspaper />
           </a>
         </div>
         <div className="footer-logo-container">

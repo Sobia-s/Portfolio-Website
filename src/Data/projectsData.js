@@ -33,7 +33,7 @@ export const projects = [
           <br />
           Because your skills deserve to be seen and remembered.
           <br />
-          Ready to build your identity & shine online? ✨
+          Build once, scale forever, and let people understand you at first glance.
         </div>
       </>
     ),
@@ -96,25 +96,6 @@ export const projects = [
     ),
     code: "https://github.com/Sobia-s/React-Project",
     live: "https://myreact-projects.netlify.app/",
-  },
-  {
-    title: "Blog landing page",
-    image: img4,
-    technologies: ["HTML", "CSS", "Responsive design"],
-    description: (
-      <>
-        Created a landing page for Little Lemon to showcase their recipes in an
-        engaging way.
-        <br />
-        Implemented a clean, responsive design with easy navigation through the
-        recipe collection and a subscription email input for user engagement.
-        <br />
-        The result is a modern, user-friendly platform that highlights recipes
-        and improves browsing.
-      </>
-    ),
-    code: "https://github.com/Sobia-s/Food-Blog",
-    live: "https://little-lemon-blog.netlify.app/",
   },
   {
     title: "Tic-Tac-Toe Project",

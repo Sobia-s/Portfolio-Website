@@ -41,15 +41,6 @@ const Nav = () => {
         <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
           <li>
             <Link
-              to="/"
-              className={location.pathname === "/" ? "active" : ""}
-              onClick={closeMenu}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/about"
               className={location.pathname === "/about" ? "active" : ""}
               onClick={closeMenu}
@@ -64,15 +55,6 @@ const Nav = () => {
               onClick={closeMenu}
             >
               Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/certificates"
-              className={location.pathname === "/certificates" ? "active" : ""}
-              onClick={closeMenu}
-            >
-              Certificates
             </Link>
           </li>
           <li>

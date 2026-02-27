@@ -22,13 +22,7 @@
   object-fit: cover;
   opacity: 1;
   margin-top: -1rem;
-}
-
-.footer-heading {
-  font-family: Aboreto, serif;
-  color: #ffffff;
-  font-size: 1.5rem;
-  margin-top: -2.5rem;
+  margin-bottom: -1.5rem;
 }
 
 .footer-icons {

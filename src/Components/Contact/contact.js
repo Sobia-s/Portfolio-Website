@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { FaLinkedin, FaGithub, FaGlobe, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaShoppingBag, FaNewspaper, FaEnvelope } from "react-icons/fa";
 import "./contact.css";
 
 function Contact() {
@@ -74,21 +74,32 @@ function Contact() {
               <span className="social-label">GitHub</span>
             </a>
             <a
-              href="https://g.dev/sobiasoomro"
+              href="https://sobia.gumroad.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-item"
             >
-              <span className="social-icon globe-icon">
-                <FaGlobe />
+              <span className="social-icon product-icon">
+                <FaShoppingBag />   
               </span>
-              <span className="social-label">Developer Profile</span>
+              <span className="social-label">My Product</span>
             </a>
             <a href="mailto:sobiasoomro97@gmail.com" className="social-item">
               <span className="social-icon email-icon">
                 <FaEnvelope />
               </span>
               <span className="social-label">Email</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/pulse/lighting-way-developers-inside-lumina-new-kind-portfolio-wilcox-zwige/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-item"
+            >
+              <span className="social-icon case-icon">
+                <FaNewspaper /> 
+              </span>
+              <span className="social-label">Case Study</span>
             </a>
           </div>
         </div>

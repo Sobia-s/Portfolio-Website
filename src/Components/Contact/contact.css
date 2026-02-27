@@ -90,12 +90,16 @@
   background-color: #0077b5;
 }
 
-.globe-icon {
-  background: linear-gradient(45deg, #4caf50, #1e88e5);
+.product-icon {
+  background: linear-gradient(45deg, #ff6b6b, #ff8e53);
 }
 
 .email-icon {
   background-color: #6c757d;
+}
+
+.case-icon {
+  background: linear-gradient(45deg, #1abc9c, #3498db);
 }
 
 .social-label {
