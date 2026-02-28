@@ -26,8 +26,7 @@ export default function Banner() {
           </h1>
 
           <p className="home-banner-para">
-            A Frontend Web Developer and the creator of Lumina, on a mission to
-            make storytelling portfolios accessible to every developer
+            Frontend Web Developer building optimized and scalable websites and digital products that solve real problems. Helping individuals and brands create meaningful digital experiences.
           </p>
           <Link to="/projects" className="home-banner-button hover-animate">
             See My Work
