@@ -2,7 +2,6 @@ import img0 from "../Assets/projects/0.webp";
 import img1 from "../Assets/projects/1.webp";
 import img2 from "../Assets/projects/2.webp";
 import img3 from "../Assets/projects/3.webp";
-import img4 from "../Assets/projects/4.webp";
 import img5 from "../Assets/projects/5.webp";
 import img6 from "../Assets/projects/6.webp";
 import img7 from "../Assets/projects/7.webp";
