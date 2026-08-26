@@ -1,0 +1,133 @@
+.lumina-section {
+  background-color: var(--white);
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.lumina-banner-container {
+  max-width: 75rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* ── Inner layout ── */
+.lumina-banner-inner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.lumina-banner-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.lumina-description {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 2;
+  margin-bottom: 0.8rem;
+}
+
+.lumina-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.8rem;
+  align-items: flex-start;
+}
+
+/* ── Video / Browser side ── */
+.lumina-banner-preview {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.browser-window {
+  width: 100%;
+  border: 1px solid rgba(57, 93, 144, 0.25);
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 16px 48px rgba(57, 93, 144, 0.12);
+}
+
+.browser-topbar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--hairline);
+  background: #f4f6f9;
+}
+
+.browser-topbar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.browser-topbar span:nth-child(1) {
+  background: #ff5f56;
+}
+.browser-topbar span:nth-child(2) {
+  background: #ffbd2f;
+}
+.browser-topbar span:nth-child(3) {
+  background: #27c93f;
+}
+
+.browser-topbar p {
+  margin-left: 0.6rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.lumina-video {
+  width: 100%;
+  display: block;
+}
+
+/* ── Badge strip below video ── */
+.lumina-banner-badge {
+  border: 1px solid var(--hairline);
+  border-top: none;
+  padding: 0.85rem 1rem;
+  background: var(--white);
+}
+
+.lumina-banner-badge-text {
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .lumina-banner-inner-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .lumina-btn-group {
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .lumina-description {
+    font-size: 0.88rem;
+  }
+  .lumina-btn-group {
+    align-items: left;
+  }
+}

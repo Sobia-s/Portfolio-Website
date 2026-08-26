@@ -1,0 +1,227 @@
+.product-page {
+  width: 100%;
+  padding: 4rem 1rem 3rem;
+  background-color: var(--white);
+}
+
+.product-container {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.product-hero {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.product-tagline {
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: -1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Divider */
+
+.product-divider {
+  width: 100%;
+  height: 1.1px;
+  margin: 2rem 0;
+  background: rgba(56, 80, 112, 0.12);
+}
+
+/* Section */
+
+.product-section {
+  text-align: left;
+}
+
+.product-section-heading {
+  margin-bottom: 1.2rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  color: var(--blue);
+}
+
+.product-section-text {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.product-article-link {
+  font-family: "DM Sans", sans-serif;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+
+/* Goal */
+
+.product-goal-text {
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--blue);
+  border-radius: 0 8px 8px 0;
+  background: rgba(56, 80, 112, 0.04);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--blue);
+}
+
+/* Image */
+
+.product-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 3rem 0;
+  border: 1px solid rgba(56, 80, 112, 0.1);
+  border-radius: 0;
+  box-shadow: 0 4px 16px rgba(56, 80, 112, 0.12);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* List */
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.product-list-dot {
+  width: 7px;
+  height: 7px;
+  margin-top: 0.45rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--blue);
+  opacity: 0.7;
+}
+
+.product-list-arrow {
+  flex-shrink: 0;
+  color: var(--blue);
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Testimonial */
+
+.product-testimonial {
+  margin: 2rem 0;
+  padding: 1.2rem 1.5rem;
+  border-left: 3px solid var(--blue);
+  border-radius: 0 10px 10px 0;
+  background: rgba(56, 80, 112, 0.04);
+}
+
+.product-testimonial-text {
+  margin-bottom: 0.8rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.product-testimonial-author {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--blue);
+  font-style: normal;
+}
+
+/* CTA Buttons */
+
+.product-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .product-section-heading {
+    font-size: 1.4rem;
+  }
+
+  .product-section-text,
+  .product-list-item {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .product-tagline {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .product-image {
+    margin: 2.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-page {
+    padding: 3rem 1rem;
+  }
+
+  .product-container {
+    padding: 1.5rem 0;
+  }
+
+  .product-section-heading {
+    font-size: 1.25rem;
+  }
+
+  .product-list {
+    gap: 0.7rem;
+  }
+
+  .product-list-item {
+    gap: 0.6rem;
+  }
+
+  .product-goal-text {
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+  }
+
+  .product-testimonial {
+    padding: 1rem;
+  }
+
+  .product-buttons {
+    flex-direction: row;
+  }
+}

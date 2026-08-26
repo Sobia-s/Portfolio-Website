@@ -1,0 +1,131 @@
+.about-banner-section {
+  width: 100%;
+  padding: 4rem 1rem;
+  background-color: var(--white);
+}
+
+.about-banner-container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.about-banner-inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.about-banner-text-container {
+  flex: 1;
+  max-width: 35rem;
+}
+
+.about-banner-description {
+  margin: 0 0 1rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.about-banner-goal {
+  margin: 1.2rem 0 0;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--blue);
+  border-radius: 0 8px 8px 0;
+  background-color: rgba(56, 80, 112, 0.05);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--blue);
+}
+
+/* Skills */
+
+.about-banner-skills-container {
+  flex: 1;
+  max-width: 32rem;
+}
+
+.about-banner-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  margin-top: 0.8rem;
+}
+
+.about-banner-skill-box {
+  padding: 0.8rem 1.1rem;
+  border: 1px solid var(--blue);
+  background-color: var(--white);
+  box-shadow: 1px 1px 3px rgba(56, 80, 112, 0.3);
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.about-banner-skill-box:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .about-banner-inner-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .about-banner-section {
+    padding: 2.9rem 1rem;
+  }
+
+  .about-banner-text-container,
+  .about-banner-skills-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .about-banner-section {
+    padding: 2.9rem 1rem;
+  }
+
+  .about-banner-container {
+    padding: 1.5rem 0;
+  }
+
+  .about-banner-description,
+  .about-banner-goal {
+    font-size: 0.95rem;
+  }
+
+  .about-banner-skill-box {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .about-banner-skills-grid {
+    gap: 0.8rem;
+  }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-banner-skill-box {
+    transition: none;
+  }
+}

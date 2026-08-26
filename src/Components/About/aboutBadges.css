@@ -1,0 +1,100 @@
+.about-badges-section {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.about-badges-heading-section {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-badges-track-wrapper {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  overflow: hidden;
+  background-color: #f4f7fa;
+  border-top: 1px solid rgba(56, 80, 112, 0.1);
+  border-bottom: 1px solid rgba(56, 80, 112, 0.1);
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+.about-badges-track {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scrollLeft 25s linear infinite;
+}
+
+.about-badges-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Badge Card */
+
+.about-badge-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10rem;
+  height: 8rem;
+  flex-shrink: 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(56, 80, 112, 0.15);
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: 1px 1px 6px rgba(56, 80, 112, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-badge-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(56, 80, 112, 0.15);
+}
+
+.about-badge-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .about-badge-card {
+    min-width: 8rem;
+    height: 6rem;
+    padding: 0.8rem;
+  }
+}

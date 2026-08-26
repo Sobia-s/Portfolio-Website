@@ -1,0 +1,266 @@
+.home-banner-section {
+  background-color: var(--white);
+  padding: 7rem 1rem 4rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-banner-container {
+  max-width: 75rem;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.home-banner-inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.home-banner-text-container {
+  flex: 1;
+  min-width: 18rem;
+  max-width: 34rem;
+}
+
+.home-banner-greeting {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--blue);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  margin-bottom: 1.2rem;
+}
+
+.home-banner-description {
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+}
+
+.home-banner-second-description {
+  font-size: 1.2rem;
+  color: var(--muted);
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+}
+
+.home-banner-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Terminal */
+
+.home-banner-image-container {
+  flex: 1;
+  min-width: 16rem;
+  max-width: 33rem;
+}
+
+.terminal {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(57, 93, 144, 0.18);
+  box-shadow: 0 8px 32px rgba(57, 93, 144, 0.1);
+}
+
+.terminal-bar {
+  background: #2a3c52;
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.t-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.t-red {
+  background: #ff5f57;
+}
+
+.t-yellow {
+  background: #febc2e;
+}
+
+.t-green {
+  background: #28c840;
+}
+
+.terminal-title {
+  font-family: "Fira Code", "Courier New", monospace;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-left: 0.5rem;
+}
+
+.terminal-body {
+  background: #1a2b3c;
+  padding: 1.5rem 1.4rem;
+  font-family: "Fira Code", "Courier New", monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.terminal-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  opacity: 0;
+  animation: termFadeIn 0.4s ease forwards;
+}
+
+.tl-1 {
+  animation-delay: 0.2s;
+}
+
+.tl-2 {
+  animation-delay: 0.6s;
+}
+
+.tl-3 {
+  animation-delay: 1s;
+}
+
+.tl-4 {
+  animation-delay: 1.4s;
+}
+
+.tl-5 {
+  animation-delay: 1.8s;
+}
+
+.tl-6 {
+  animation-delay: 2.2s;
+}
+
+.tl-7 {
+  animation-delay: 2.6s;
+}
+
+@keyframes termFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.t-prompt {
+  color: #28c840;
+  font-weight: 700;
+}
+
+.t-text {
+  color: #a8c4d8;
+}
+
+.t-key {
+  color: #febc2e;
+}
+
+.t-value {
+  color: #7ec8e3;
+}
+
+.t-highlight {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.t-check {
+  color: #28c840;
+  font-weight: 700;
+}
+
+/* Stat */
+
+.home-banner-stat-row {
+  border: 1px solid var(--hairline);
+  border-top: none;
+}
+
+.home-banner-stat {
+  padding: 1rem 1.2rem;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  color: var(--blue);
+  line-height: 1;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .home-banner-inner-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-banner-text-container,
+  .home-banner-image-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .home-banner-button-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-banner-section {
+    padding: 5rem 1rem 1.7rem;
+  }
+
+  .home-banner-container {
+    padding: 1rem 0;
+  }
+
+  .home-banner-greeting {
+    font-size: 2.2rem;
+  }
+
+  .home-banner-description {
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
+
+  .home-banner-second-description {
+    font-size: 1rem;
+  }
+
+  .terminal-body {
+    padding: 1.2rem 1rem;
+  }
+
+  .terminal-line {
+    font-size: 0.75rem;
+  }
+
+  .stat-number {
+    font-size: 1.2rem;
+  }
+}

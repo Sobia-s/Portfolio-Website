@@ -1,0 +1,282 @@
+.navbar-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  background: #fafbfc;
+  border-bottom: 1px solid rgba(56, 80, 112, 0.15);
+  z-index: 999;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 75rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar-inner-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: auto;
+  height: 68px;
+  object-fit: contain;
+}
+
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-links-container li {
+  display: flex;
+}
+
+.navbar-links-container a {
+  position: relative;
+  display: inline-block;
+  padding: 4px 0;
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: color 0.2s ease;
+}
+
+.navbar-links-container a:hover {
+  color: var(--blue-mid);
+}
+
+.navbar-links-container a.active {
+  color: var(--blue);
+}
+
+.navbar-links-container a.active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  background: #395d90;
+}
+
+.hire-me-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 10px 18px;
+  color: var(--btn-text);
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-bg);
+  border-radius: 0;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.hire-me-btn:hover {
+  color: var(--btn-bg);
+  background: transparent;
+}
+
+.hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  color: var(--blue);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 22px;
+}
+
+/* Keyboard focus */
+.navbar-links-container a:focus-visible,
+.hire-me-btn:focus-visible,
+.hamburger:focus-visible,
+.logo-container:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+}
+
+/* Tablet / Mobile */
+@media screen and (max-width: 950px) {
+  .navbar-section {
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  .navbar-container {
+    padding: 0 10px;
+  }
+
+   .navbar-inner-container {
+    position: relative;
+  }
+
+  .logo {
+    width: 100px;
+    height: 50px;
+  }
+
+  .navbar-links-container {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100dvh - 60px);
+    padding: 2rem;
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition:
+      transform 0.3s ease,
+      visibility 0.3s ease;
+    overflow-y: auto;
+  }
+
+  .navbar-links-container.open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  .navbar-links-container li {
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar-links-container a {
+    display: inline-block;
+    padding: 8px 0;
+    color: var(--white);
+    font-size: 1.1rem;
+  }
+
+  .navbar-links-container a:hover {
+    color: var(--blue-light);
+  }
+
+  .navbar-links-container a.active {
+    color: var(--white);
+  }
+
+  .navbar-links-container a.active::after {
+    background: var(--white);
+  }
+
+  .hamburger {
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+   .hire-me-btn {
+    padding: 8px 12px;
+    font-size: 0.60rem;
+    letter-spacing: 0.03em;
+     order: 2;
+    margin-left: auto;
+  }
+}
+
+/* Small mobile */
+@media screen and (max-width: 480px) {
+  .navbar-section {
+    padding: 0 12px;
+  }
+
+  .navbar-container {
+    padding: 0 8px;
+  }
+
+  .logo {
+    width: 90px;
+    height: 50px;
+  }
+
+  .hire-me-btn {
+    padding: 8px 12px;
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+  }
+
+  .hamburger {
+    width: 38px;
+    height: 38px;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+  }
+
+  .navbar-links-container {
+    padding: 1.5rem;
+  }
+
+  .navbar-links-container a {
+    font-size: 1rem;
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 360px) {
+  .logo {
+    width: 82px;
+  }
+
+  .hire-me-btn {
+    padding: 7px 9px;
+    font-size: 0.6rem;
+  }
+
+  .hamburger {
+    width: 34px;
+    height: 34px;
+  }
+
+  .menu-icon {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,59 @@
+.section-header {
+  margin-bottom: 1.5rem;
+}
+
+.section-header.left {
+  text-align: left;
+}
+.section-header.center {
+  text-align: center;
+}
+
+.section-header-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 2px;
+}
+
+.section-header.center .section-header-eyebrow {
+  justify-content: center;
+}
+
+.section-header-title {
+  font-family: "Libre Baskerville", Georgia, serif;
+  color: var(--blue);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .section-header-title {
+    font-size: 1.7rem;
+    line-height: 1.4;
+  }
+
+  .section-header-eyebrow {
+    font-size: 0.73rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header-title {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .section-header-eyebrow {
+    font-size: 0.68rem;
+  }
+}

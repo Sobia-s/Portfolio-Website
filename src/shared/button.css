@@ -1,0 +1,55 @@
+.button {
+  font-family: "Aboreto", serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  /* letter-spacing: 0.01em; */
+  word-spacing: 0.1em;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 0;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Primary */
+.button-primary {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid var(--btn-bg);
+}
+
+.button-primary:hover {
+  background: transparent;
+  color: var(--btn-bg);
+  border: 1.5px solid var(--btn-bg);
+}
+
+/* Secondary */
+.button-secondary {
+  background: transparent;
+  color: var(--btn-bg);
+  border: 1.5px solid var(--btn-bg);
+}
+
+.button-secondary:hover {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .button {
+    padding: 10px 19px;
+    font-size: 0.7rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .button {
+    text-align: center;
+    padding: 9px 16px;
+    font-size: 0.6rem;
+  }
+}

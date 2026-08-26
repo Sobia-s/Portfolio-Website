@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:wght@300;400;500;600&display=swap");
+
+:root {
+  --white: #fffffe;
+  --ink: #1d1d1e;
+  --blue: #395d90;
+  --blue-mid: #0b42a0;
+  --blue-light: #e8eef7;
+
+  /* Utility */
+  --muted: #423b3b;
+  --hairline: #cfd1d1;
+  /* --hairline: rgba(2, 2, 2, 0.1); */
+
+  /* Buttons */
+  --btn-bg: #395d90;
+  --btn-text: #fffffe;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: auto;
+}
